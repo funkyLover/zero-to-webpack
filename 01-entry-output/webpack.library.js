@@ -2,8 +2,6 @@
 var path = require('path');
 
 module.exports = {
-  // you can simple set 
-  // entry: './src/index.js'
   entry: {
     lib: './src/library/index.js'
   },
