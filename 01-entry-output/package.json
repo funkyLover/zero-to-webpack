@@ -2,8 +2,8 @@
   "name": "01-entry-output",
   "version": "1.0.0",
   "scripts": {
-    "base": "webpack --config webpack.base.js",
-    "multi": "webpack --config webpack.multiple.js"
+    "base": "webpack --config webpack.base.js && node ../tools/open.js html/index.html",
+    "multi": "webpack --config webpack.multiple.js && node ./tools/open.js html/page1.html"
   },
   "devDependencies": {
     "webpack": "^2.4.1"
