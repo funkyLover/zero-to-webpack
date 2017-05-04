@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "scripts": {
     "base": "webpack --config webpack.base.js && node ../tools/open.js html/index.html",
-    "multi": "webpack --config webpack.multiple.js && node ./tools/open.js html/page1.html"
+    "multi": "webpack --config webpack.multiple.js && node ../tools/open.js html/page1.html && node ../tools/open.js html/page2.html",
+    "lib": "webpack --config webpack.library.js",
+    "async": "webpack --config webpack.async.js && node ../tools/open.js html/async.html"
   },
   "devDependencies": {
     "webpack": "^2.4.1"

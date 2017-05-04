@@ -5,10 +5,10 @@ module.exports = {
   // you can simple set 
   // entry: './src/index.js'
   entry: {
-    app: './src/index.js'
+    app: './src/single-entry/index.js'
   },
   output: {
-    path: path.resolve(__dirname, 'dist'),
+    path: path.resolve(__dirname, 'dist', 'single-entry'),
     filename: '[name].js'
   }
 }
