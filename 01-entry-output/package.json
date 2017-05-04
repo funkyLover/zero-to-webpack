@@ -1,0 +1,11 @@
+{
+  "name": "01-entry-output",
+  "version": "1.0.0",
+  "scripts": {
+    "base": "webpack --config webpack.base.js",
+    "multi": "webpack --config webpack.multiple.js"
+  },
+  "devDependencies": {
+    "webpack": "^2.4.1"
+  }
+}
