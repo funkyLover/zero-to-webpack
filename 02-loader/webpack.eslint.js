@@ -14,7 +14,7 @@ module.exports = {
       {
         test: /\.js$/,
         enforce: 'pre',
-        loader: 'eslint-loader',
+        use: 'eslint-loader',
         exclude: /node_modules/,
         options: {
           // cool feature!

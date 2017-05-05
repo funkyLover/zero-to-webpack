@@ -1,0 +1,12 @@
+
+* {
+  transition: all 1s ease-in-out;
+}
+
+h1 {
+  color: red;
+
+  .green {
+    color: green;
+  }
+}
