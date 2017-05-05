@@ -3,7 +3,11 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "eslint": "webpack --config webpack.eslint.js"
+    "eslint": "webpack --config webpack.eslint.js && node ../tools/open.js html/eslint.html",
+    "babel": "webpack --config webpack.babel.js && node ../tools/open.js html/babel.html",
+    "css": "webpack --config webpack.css.js && node ../tools/open.js html/css.html",
+    "sass": "webpack --config webpack.sass.js && node ../tools/open.js html/sass.html",
+    "entire": "webpack --config webpack.entire.js && node ../tools/open.js html/entire.html"
   },
   "devDependencies": {
     "babel-core": "^6.24.1",
