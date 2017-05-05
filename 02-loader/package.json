@@ -1,11 +1,10 @@
 {
-  "name": "zero-to-webpack",
+  "name": "02-loader",
   "version": "1.0.0",
-  "description": "master webpack",
+  "main": "index.js",
   "scripts": {
-    "postinstall": "node ./tools/linkDependency.js"
+    "eslint": "webpack --config webpack.eslint.js"
   },
-  "author": "funkyLover",
   "devDependencies": {
     "babel-core": "^6.24.1",
     "babel-eslint": "^7.2.3",
