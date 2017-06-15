@@ -15,13 +15,10 @@ module.exports = {
         test: /\.js$/,
         exclude: /node_modules/,
         enforce: 'pre',
-        use: {
-          loader: 'eslint-loader',
-          options: {
-            // cool feature!
-            fix: true,
-            formatter: require('eslint-friendly-formatter')
-          }
+        loader: 'eslint-loader',
+        options: {
+          fix: true,
+          formatter: require('eslint-friendly-formatter')
         }
       },
       { test: /\.js$/, exclude: /node_modules/, use: 'babel-loader' },
@@ -31,11 +28,10 @@ module.exports = {
         use: [
           { loader: 'style-loader' },
           { loader: 'css-loader' },
-          { loader: 'postcss-loader' },
           {
             loader: 'postcss-loader',
             options: {
-              plugins: function () {
+              plugins: function (loader) {
                 return [ require('autoprefixer')() ]
               }
             }

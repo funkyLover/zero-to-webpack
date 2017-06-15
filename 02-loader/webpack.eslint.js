@@ -14,12 +14,17 @@ module.exports = {
       {
         test: /\.js$/,
         enforce: 'pre',
-        use: 'eslint-loader',
+        loader: 'eslint-loader',
         exclude: /node_modules/,
         options: {
           // cool feature!
           fix: true,
-          formatter: require('eslint-friendly-formatter')
+          formatter: require('eslint-friendly-formatter'),
+          failOnError: false,
+          failOnWarning: false,
+          quiet: false,
+          emitWarning: false,
+          emitError: false
         }
       }
     ]
