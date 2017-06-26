@@ -7,8 +7,7 @@ var UglifyJSPlugin = webpack.optimize.UglifyJsPlugin
 
 module.exports = {
   entry: {
-    app: './src/optimize/index.js',
-    vendor: ['./src/optimize/lib/tools.js']
+    app: './src/optimize/index.js'
   },
   output: {
     filename: '[name].js',
