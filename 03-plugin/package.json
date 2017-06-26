@@ -3,9 +3,8 @@
   "version": "1.0.0",
   "scripts": {
     "html": "webpack --config webpack.html.js && node ../tools/open.js dist/html/index.html",
-    "optimize": "webpack --config webpack.babel.js && node ../tools/open.js html/babel.html",
-    "prerender": "webpack --config webpack.css.js && node ../tools/open.js html/css.html",
-    "tool": "webpack --config webpack.sass.js && node ../tools/open.js html/sass.html"
+    "optimize": "webpack --config webpack.optimize.js && node ../tools/open.js dist/optimize/index.html",
+    "tools": "webpack --config webpack.tools.js && node ../tools/open.js html/tools/index.html"
   },
   "devDependencies": {
     "autoprefixer": "^6.7.7",
