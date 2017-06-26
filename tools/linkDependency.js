@@ -6,7 +6,9 @@ var linkFrom = path.resolve(__dirname, '..', nodeModules);
 
 const dirs = [
   '../01-entry-output',
-  '../02-loader'
+  '../02-loader',
+  '../03-plugin',
+  '../04-realworld'
 ];
 
 for(let dir of dirs) {
