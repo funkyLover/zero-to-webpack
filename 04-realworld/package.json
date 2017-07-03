@@ -1,11 +1,12 @@
 {
-  "name": "zero-to-webpack",
+  "name": "webpack-realworld-demo",
   "version": "1.0.0",
-  "description": "master webpack",
-  "scripts": {
-    "postinstall": "node ./tools/linkDependency.js"
-  },
+  "description": "master webapck",
   "author": "funkyLover",
+  "scripts": {
+    "dev:dashboard": "webpack-dashboard -c magenta -- webpack-dev-server --hot --progress --colors --quiet --port 3000 --config webpack.dev.js",
+    "dev": "webpack-dev-server --hot --progress --colors --quiet --port 3000 --history-api-fallback --config webpack.dev.js"
+  },
   "devDependencies": {
     "autoprefixer": "^6.7.7",
     "babel-core": "^6.24.1",
